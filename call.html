@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Call Us</title>
+  <script>
+    const phoneNumber = '0417000563';
+    const telLink = 'tel:' + phoneNumber;
+
+    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      // Mobile device: Open dialer
+      window.location.href = telLink;
+    } else {
+      // Desktop: Show alert with number
+      alert('Call us on: ' + phoneNumber);
+      // Optionally redirect back to home
+      window.location.href = 'https://elevatekitchens.com.au';
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
